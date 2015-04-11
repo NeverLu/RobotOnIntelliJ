@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context debug="99" reloadable="true" crossContext="true" verbosity="debug">
+
+<Resource name="orcl" type="javax.sql.DataSource"
+	driverClassName="oracle.jdbc.OracleDriver"
+
+    maxIdle="10"
+    maxWait="80"
+
+    url="jdbc:oracle:thin:@localhost:1521:ORCL"
+    username="robot" password="123456"
+
+    maxActive="20"/>
+
+</Context>
+        <!--url="jdbc:oracle:thin:@10.1.3.41:1521:cognos"-->
+        <!--username="slpc_cog" password="123456"-->
+        <!--url="jdbc:oracle:thin:@172.16.21.29:1521:cognos"-->
+        <!--username="slpc_cog" password="123456"-->
+        <!--url="jdbc:oracle:thin:@121.248.200.18:1521:orcl"-->
+        <!--username="slpc_hn" password="123456"-->
+        <!--url="jdbc:oracle:thin:@121.248.200.19:1521:orcl"-->
+        <!--username="ywj" password="123456"-->
