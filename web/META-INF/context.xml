@@ -7,7 +7,7 @@
     maxIdle="10"
     maxWait="80"
 
-    url="jdbc:oracle:thin:@10.196.80.18:1521:ORCL "
+    url="jdbc:oracle:thin:@10.196.80.18:1521:ORCL"
     username="robot" password="123456"
 
     maxActive="20"/>
