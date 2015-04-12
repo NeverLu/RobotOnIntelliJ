@@ -100,5 +100,39 @@
     </form>
 </div>
 
+
+<div id="register" class="" title="用户注册">
+    <form class="form-horizontal" action="${ctx}/servlet/loginAct" method="post">
+        <div class="form-group">
+            <label for="name" class="col-sm-3 control-label">用户姓名：</label>
+
+            <div class="col-sm-9">
+                <input type="text" name="name" class="form-control" id="register_name" placeholder="用户名">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password" class="col-sm-3 control-label">登陆密码：</label>
+
+            <div class="col-sm-9">
+                <input type="password" name="password" class="form-control" id="register_password" placeholder="用户密码">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password" class="col-sm-3 control-label">登陆密码：</label>
+
+            <div class="col-sm-9">
+                <input type="password" name="password" class="form-control" id="register_repeat_password" placeholder="用户密码">
+            </div>
+        </div>
+        <input type="hidden" name="act" value="register"/>
+
+        <div class="form-group">
+            <div class="col-sm-offset-9">
+                <button type="submit" class="btn btn-default">注册</button>
+            </div>
+        </div>
+    </form>
+</div>
+
 </body>
 </html>

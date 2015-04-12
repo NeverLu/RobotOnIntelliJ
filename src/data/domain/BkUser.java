@@ -25,6 +25,12 @@ public class BkUser implements java.io.Serializable {
 //        this.role = role;
 //        this.rolenm = rolenm;
     }
+
+    public BkUser(String uname, String upwd) {
+        this.uname = uname;
+        this.upwd = upwd;
+    }
+
     public String getUcode() {
         return ucode;
     }

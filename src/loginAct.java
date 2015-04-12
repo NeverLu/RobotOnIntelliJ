@@ -35,6 +35,21 @@ public class loginAct extends HttpServlet {
 
            }
 
+        if (act.equals("register")) {
+            String register_name = StringUtil.filterHtml(request.getParameter("register_name"));
+            String register_password = StringUtil.filterHtml(request.getParameter("register_password"));
+            String repeat_password = StringUtil.filterHtml(request.getParameter("register_repeat_password"));
+
+            if (register_password.equals(repeat_password)) {
+                BkUser new_user = new BkUser(register_name,register_password);
+                userImp.save(new_user);
+            }
+            else {
+                System.out.println("密码错误！");
+            }
+        }
+
+
         if (act.equals("quit")) {
             sessionUtil.removeSession(request);
             response.sendRedirect(request.getContextPath() + "/index.jsp");
